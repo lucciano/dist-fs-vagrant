@@ -4,6 +4,6 @@ cd mfs-1.6.27
 make
 sudo make install
 
-echo 192.168.1.2	mfsmaster  | sudo tee -a /etc/hosts
+echo 192.168.30.2	mfsmaster  | sudo tee -a /etc/hosts
 
 sudo cp /vagrant/logger-rc.local /etc/rc.local
