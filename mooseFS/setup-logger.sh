@@ -6,3 +6,4 @@ sudo make install
 
 echo 192.168.1.2	mfsmaster  | sudo tee -a /etc/hosts
 
+sudo cp /vagrant/logger-rc.local /etc/rc.local
