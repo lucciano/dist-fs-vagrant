@@ -9,6 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     master.vm.box = "base"
     master.vm.network "private_network", ip: "192.168.30.2",
 	virtualbox__intnet: "mynetwork"
+    master.vm.network "forwarded_port", guest: 9425, host: 9425
 
     config.vm.provision "shell",
    	 inline: "/vagrant/setup.sh && /vagrant/setup-master.sh"

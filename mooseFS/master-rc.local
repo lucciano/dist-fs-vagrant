@@ -11,5 +11,6 @@
 #
 # By default this script does nothing.
 sudo -u vagrant /home/vagrant/mfs-1.6.27/mfsmaster/mfsmaster
+sudo -u vagrant python /home/vagrant/mfs-1.6.27/mfscgi/mfscgiserv
 
 exit 0

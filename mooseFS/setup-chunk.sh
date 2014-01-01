@@ -7,7 +7,7 @@ cd /etc/mfs
 sudo cp mfschunkserver.cfg.dist mfschunkserver.cfg 
 sudo cp mfshdd.cfg.dist mfshdd.cfg
 
-echo 192.168.1.2	mfsmaster  | sudo tee -a /etc/hosts
+echo 192.168.30.2	mfsmaster  | sudo tee -a /etc/hosts
 
 dd if=/dev/zero of=/var/chunk bs=1024 count=1 seek=$((2*1024*1024-1))
 yes | sudo mkfs -t ext3 /var/chunk
